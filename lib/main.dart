@@ -61,7 +61,7 @@ class MyHomePage extends StatelessWidget {
                         vertical: 10
                       ),
                       child: Text(
-                          tr.value.toString(),
+                          'R\$ ${tr.value.toString()}',
                         style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 20,
