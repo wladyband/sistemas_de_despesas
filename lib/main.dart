@@ -61,7 +61,12 @@ class MyHomePage extends StatelessWidget {
                         vertical: 10
                       ),
                       child: Text(
-                          tr.value.toString()
+                          tr.value.toString(),
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20,
+                            color: Colors.purple
+                        ),
                       ),
                       decoration: BoxDecoration(
                         border: Border.all(
@@ -72,13 +77,19 @@ class MyHomePage extends StatelessWidget {
                       padding: EdgeInsets.all(10),
                     ),
                     Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(tr.title),
-                        Text(tr.date.toString(),
+                        Text(
+                            tr.title,
                           style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 20,
-                            color: Colors.purple
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold
+                          ),
+                        ),
+                        Text(
+                          tr.date.toString(),
+                          style: TextStyle(
+                            color: Colors.grey
                           ),
                         ),
                       ],
